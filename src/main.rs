@@ -1,3 +1,6 @@
 fn main() {
-    println!("Hello, world!");
+    let vetor = vec![1,2,3];
+    let x = vetor.iter();
+    
+    println!("Value = {:?}", x);
 }
