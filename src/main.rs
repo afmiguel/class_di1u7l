@@ -10,8 +10,9 @@ fn main() {
             }
         );
     println!("Vamos iniciar a iteração...");
+    println!(">>> {:?}", x.next());
     println!("{:?}", x.next());
-//    println!("{:?}", x.next());
-//    println!("{:?}", x.next());
+    println!("{:?}", x.next());
+    println!("{:?}", x.next());
 }
 
