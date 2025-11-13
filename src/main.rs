@@ -1,15 +1,17 @@
 fn main() {
-    let vetor = vec![1,2,3];
-    let mut my_iterator = vetor.iter();
-    let x = my_iterator.next();
-    println!("Value = {:?}", x);
-
-    let x = my_iterator.next();
-    println!("Value = {:?}", x);
-
-    let x = my_iterator.next();
-    println!("Value = {:?}", x);
-
-    let x = my_iterator.next();
-    println!("Value = {:?}", x);
+    let vetor = vec![1,2,3,4,5,6];
+    let mut x =
+        vetor
+        .iter()
+        .filter(|v|
+            {
+                println!("{v}");
+                *v % 2 == 0
+            }
+        );
+    println!("Vamos iniciar a iteração...");
+    println!("{:?}", x.next());
+//    println!("{:?}", x.next());
+//    println!("{:?}", x.next());
 }
+
