@@ -26,9 +26,9 @@ impl Iterator for Counter {
 
 fn main() {
     let counter1 = Counter::new(5);
-    let counter2 = counter1.clone();
+    //let counter2 = counter1.clone();
     for i in counter1.map(|x| x*x) {
         println!("{}", i);
     }
-    println!("Sum={}", counter2.sum::<u32>());
+    //println!("Sum={}", counter2.sum::<u32>());
 }
