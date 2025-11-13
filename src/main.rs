@@ -1,8 +1,15 @@
 fn main() {
     let vetor = vec![1,2,3];
-    let x = vetor.iter().next();
+    let mut my_iterator = vetor.iter();
+    let x = my_iterator.next();
     println!("Value = {:?}", x);
 
-    let x = vetor.iter().next();
+    let x = my_iterator.next();
+    println!("Value = {:?}", x);
+
+    let x = my_iterator.next();
+    println!("Value = {:?}", x);
+
+    let x = my_iterator.next();
     println!("Value = {:?}", x);
 }
